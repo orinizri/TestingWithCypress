@@ -1,0 +1,22 @@
+{
+  "name": "mapping-out-territory",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "email": "gil@tayar.org",
+    "name": "Gil Tayar"
+  },
+  "scripts": {
+    "start": "serve -l 3000 src",
+    "test": "npm eslint http-get://localhost:3000 cy:run",
+    "eslint": "eslint 'src/**/*.js' 'test/**/*.js' 'test-sample-solution/**/*.js' 'tutorial-snippets/**/*.js'"
+  },
+  "devDependencies": {
+    "cypress": "^9.2.0",
+    "eslint": "^7.19.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "serve": "^11.3.2"
+  }
+}
